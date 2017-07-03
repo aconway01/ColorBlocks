@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Color Blocks</title>
+
+<style>
+input {
+	background-color: #cccccc;
+	font-size: 30pt;
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	float: left;
+}
+</style>
+
+<script type="text/javascript">
+function randomHex() {
+    var max = 15;
+    var min = 0;
+    randnum = Math.floor(Math.random() * (max - min + 1)) + min; ;
+    var char = "";
+    if (randnum == 0) {
+        char = "0";
+    }
+    if (randnum == 1) {
+        char = "1";
+    }
+    else if (randnum == 2) {
+        char = "2";
+    }
+    else if (randnum == 3) {
+        char = "3";
+    }
+    else if (randnum == 4) {
+        char = "4";
+    }
+    else if (randnum == 5) {
+        char = "5";
+    }
+    else if (randnum == 6) {
+        char = "6";
+    }
+    else if (randnum == 7) {
+        char = "7";
+    }
+    else if (randnum == 8) {
+        char = "8";
+    }
+    else if (randnum == 9) {
+        char = "9";
+    }
+    else if (randnum == 10) {
+        char = "a";
+    }
+    else if (randnum == 11) {
+        char = "b";
+    }
+    else if (randnum == 12) {
+        char = "c";
+    }
+    else if (randnum == 13) {
+        char = "d";
+    }
+    else if (randnum == 14) {
+        char = "e";
+    }
+    else if (randnum == 15) {
+        char = "f";
+    }
+    return char;
+}
+
+function colorGen(block) {
+    var hexColor = "#";
+    for (i = 0; i < 6; i++) {
+        var str1 = randomHex();
+        hexColor = hexColor.concat(str1);
+    }
+    document.getElementById(block).value = hexColor;
+    document.getElementById(block).style.backgroundColor = hexColor;
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Color Blocks</h1>
+
+<input type="button" value="       " onclick='colorGen("block1")' id="block1">
+<input type="button" value="       " onclick='colorGen("block2")' id="block2">
+<input type="button" value="       " onclick='colorGen("block3")' id="block3">
+<input type="button" value="       " onclick='colorGen("block4")' id="block4">
+<input type="button" value="       " onclick='colorGen("block5")' id="block5">
+<input type="button" value="       " onclick='colorGen("block6")' id="block6">
+<input type="button" value="       " onclick='colorGen("block7")' id="block7">
+<input type="button" value="       " onclick='colorGen("block8")' id="block8">
+<input type="button" value="       " onclick='colorGen("block9")' id="block9">
+<input type="button" value="       " onclick='colorGen("block10")' id="block10">
+<input type="button" value="       " onclick='colorGen("block11")' id="block11">
+<input type="button" value="       " onclick='colorGen("block12")' id="block12">
+<input type="button" value="       " onclick='colorGen("block13")' id="block13">
+<input type="button" value="       " onclick='colorGen("block14")' id="block14">
+<input type="button" value="       " onclick='colorGen("block15")' id="block15">
+<input type="button" value="       " onclick='colorGen("block16")' id="block16">
+<input type="button" value="       " onclick='colorGen("block17")' id="block17">
+<input type="button" value="       " onclick='colorGen("block18")' id="block18">
+<input type="button" value="       " onclick='colorGen("block19")' id="block19">
+<input type="button" value="       " onclick='colorGen("block20")' id="block20">
+<input type="button" value="       " onclick='colorGen("block21")' id="block21">
+<input type="button" value="       " onclick='colorGen("block22")' id="block22">
+<input type="button" value="       " onclick='colorGen("block23")' id="block23">
+<input type="button" value="       " onclick='colorGen("block24")' id="block24">
+
+</body>
+
+</html>
