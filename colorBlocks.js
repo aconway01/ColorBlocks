@@ -1,7 +1,7 @@
 function randomHex() {
     var max = 15;
     var min = 0;
-    randnum = Math.floor(Math.random() * (max - min + 1)) + min;
+    var randnum = Math.floor(Math.random() * (max - min + 1)) + min;
     var char = "";
     if (randnum == 0) {
         char = "0";
