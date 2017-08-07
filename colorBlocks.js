@@ -1,4 +1,4 @@
-// return random hexidecimal value
+// return random hexadecimal value
 function randomHex() {
     var max = 15;
     var min = 0;
@@ -7,7 +7,7 @@ function randomHex() {
     return HexVal[randnum];
 }
 
-// generate hexidemical color, update block
+// generate hexademical color, update block
 function colorGen(block) {
     var hexColor = "#";
     for (i = 0; i < 6; i++) {
