@@ -1,3 +1,4 @@
+// return random hexidecimal value
 function randomHex() {
     var max = 15;
     var min = 0;
@@ -5,6 +6,8 @@ function randomHex() {
     var HexVal = ["0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f"];
     return HexVal[randnum];
 }
+
+// generate hexidemical color, update block
 function colorGen(block) {
     var hexColor = "#";
     for (i = 0; i < 6; i++) {
